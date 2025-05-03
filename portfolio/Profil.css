@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  color: #333;
+  line-height: 1.5;
+  background: 
+    linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
+    url('images/image.png') center/cover fixed;
+}
+
+
+.site-header {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(5px);
+}
+
+.site-header h1 {
+  font-size: 2.5rem;
+  color: #fff;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+}
+
+.site-header , .subtitle {
+  margin-top: 0.5rem;
+  color: #eee;
+  font-weight: 300;
+}
+
+/* ---  C. Contenu principal  --- */
+.content {
+  display: flex;
+  justify-content: center;
+  padding: 3rem 1rem;
+}
+.profil {
+  background: rgba(255,255,255,0.85);
+  border-radius: 12px;
+  padding: 2rem;
+  max-width: 360px;
+  width: 100%;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  animation: fadeIn 1s ease-out;
+}
+.profil ul {
+  list-style: none;
+}
+.profil li {
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+.profil li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.3rem;
+  width: 1.2rem;
+  height: 1.2rem;
+  background: #A768A6;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* ---  D. Pied de page  --- */
+.site-footer {
+  text-align: center;
+  padding: 1.5rem;
+}
+.btn-retour {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: #A768A6;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+.btn-retour:hover {
+  background: #55375E;
+}
+
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
